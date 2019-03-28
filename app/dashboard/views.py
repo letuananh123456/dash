@@ -23,10 +23,6 @@ class LocationcontactView(View):
     def get(self, request):
         return render(request, 'dashboard/customer_contact/location_contact.html')
 
-class TablecontactView(View):
-    def get(self, request):
-        return render(request, 'dashboard/customer_contact/table_contact.html')
-
 class DaysuccessView(View):
     def get(self, request):
         return render(request, 'dashboard/success_rate/day_success.html')
@@ -34,10 +30,6 @@ class DaysuccessView(View):
 class MonthsuccessView(View):
     def get(self, request):
         return render(request, 'dashboard/success_rate/month_success.html')
-
-class TablesuccessView(View):
-    def get(self, request):
-        return render(request, 'dashboard/success_rate/table_success.html')
 
 class AgenttotalView(View):
     def get(self, request):
@@ -50,10 +42,6 @@ class NewagentView(View):
 class AgentchannelView(View):
     def get(self, request):
         return render(request, 'dashboard/agent_statistics/agent_channel.html')
-
-class TableagentView(View):
-    def get(self, request):
-        return render(request, 'dashboard/agent_statistics/table_agent.html')
 
 class MainproductView(View):
     def get(self, request):

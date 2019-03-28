@@ -1,8 +1,4 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  padding: 30px;
-  -webkit-font-smoothing: antialiased;
-}
+
 .bar {
   background-color: #f2f2f1;
   width: 100%;
@@ -35,3 +31,4 @@ body {
   font-weight: 700;
   line-height: 30px;
 }
+

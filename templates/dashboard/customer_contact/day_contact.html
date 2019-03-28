@@ -15,12 +15,9 @@
   <!-- Morris chart -->
   <link rel="stylesheet" href="{% static 'dashboard/bower_components/morris.js/morris.css' %}">
   <!-- jvectormap -->
-  <link rel="stylesheet" href="{% static 'dashboard/bower_components/jvectormap/jquery-jvectormap.css' %}">
-  <!-- Date Picker -->
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="{% static 'dashboard/bower_components/bootstrap-daterangepicker/daterangepicker.css' %}">
-  <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="{% static 'dashboard/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css' %}">
+
+
+
         {% endblock %}
   {% block content %}
     <!-- Main content -->
@@ -54,6 +51,736 @@
       <!-- /.row -->
     <!-- /.content -->
 
+
+        <br>
+        <div class="row">
+            <div class="col-xs-12">
+         <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Thống kê tiếp cận khách hàng theo ngày</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>STT</th>
+                  <th>Ngày thống kê</th>
+                  <th>Thời gian</th>
+                  <th>Số khách hàng tiếp cận</th>
+                  <th>Tích lũy</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>dd/mm/yyyy
+                  </td>
+                  <td>Từ 0h đến 0h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>dd/mm/yyyy
+                  </td>
+                  <td>Từ 0h15 đến 0h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>dd/mm/yyyy
+                  </td>
+                  <td>Từ 0h30 đến 0h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>dd/mm/yyyy
+                  </td>
+                  <td>Từ 0h45 đến 1h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 1h00 đến 1h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 1h15 đến 1h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 1h30 đến 1h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 1h45 đến 2h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 2h00 đến 2h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 2h15 đến 2h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 2h30 đến 2h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 2h45 đến 3h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 3h00 đến 3h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 3h15 đến 3h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 3h30 đến 3h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 3h45 đến 4h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 4h00 đến 4h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 4h15 đến 4h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 4h30 đến 4h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 4h45 đến 5h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>21</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 5h00 đến 5h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 5h15 đến 5h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>23</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 5h30 đến 5h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 5h45 đến 6h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 6h00 đến 6h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 6h15 đến 6h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>27</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 6h30 đến 6h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>28</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 6h45 đến 7h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                 <tr>
+                  <td>29</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 7h00 đến 7h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>30</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 7h15 đến 7h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>31</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 7h30 đến 7h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>32</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 7h45 đến 8h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>33</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 8h00 đến 8h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>34</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 8h15 đến 8h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>35</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 8h30 đến 8h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>36</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 8h45 đến 9h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>37</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 9h00 đến 9h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>38</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 9h15 đến 9h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>39</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 9h30 đến 9h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>40</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 9h45 đến 10h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>41</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 10h00 đến 10h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>42</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 10h15 đến 10h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>43</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 10h30 đến 10h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>44</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 10h45 đến 11h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>45</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 11h00 đến 11h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>46</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 11h15 đến 11h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>47</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 11h30 đến 11h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>48</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 11h45 đến 12h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>49</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 12h00 đến 12h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>50</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 12h15 đến 12h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>51</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 12h30 đến 12h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>52</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 12h45 đến 13h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>53</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 13h00 đến 13h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>54</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 13h15 đến 13h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>55</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 13h30 đến 13h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>56</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 13h45 đến 14h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>57</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 14h00 đến 14h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>58</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 14h15 đến 14h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>59</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 14h30 đến 14h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>60</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 14h45 đến 15h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>61</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 15h00 đến 15h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>62</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 15h15 đến 15h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>63</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 15h30 đến 15h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>64</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 15h45 đến 16h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>65</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 16h00 đến 16h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>66</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 16h15 đến 16h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>67</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 16h30 đến 16h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>68</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 16h45 đến 17h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>69</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 17h00 đến 17h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>70</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 17h15 đến 17h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>71</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 17h30 đến 17h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>72</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 17h45 đến 18h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>73</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 18h00 đến 18h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>74</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 18h15 đến 18h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>75</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 18h30 đến 18h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>76</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 18h45 đến 19h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 </tr>
+                 <tr>
+                  <td>77</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 19h00 đến 19h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>78</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 19h15 đến 19h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>79</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 19h30 đến 19h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 </tr>
+                 <tr>
+                  <td>80</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 19h45 đến 20h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>81</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 20h00 đến 20h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>82</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 20h15 đến 20h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 </tr>
+                 <tr>
+                  <td>83</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 20h30 đến 20h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>84</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 20h45 đến 21h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>85</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 21h00 đến 21h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 </tr>
+                 <tr>
+                  <td>86</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 21h15 đến 21h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>87</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 21h30 đến 21h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>88</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 21h45 đến 22h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 </tr>
+                 <tr>
+                  <td>89</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 22h00 đến 22h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>90</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 22h15 đến 22h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>91</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 22h30 đến 22h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 </tr>
+                 <tr>
+                  <td>92</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 22h45 đến 23h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>93</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 23h00 đến 23h15</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>94</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 23h15 đến 23h30</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 </tr>
+                 <tr>
+                  <td>95</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 23h30 đến 23h45</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                 <tr>
+                  <td>96</td>
+                  <td>dd/mm/yyyy</td>
+                  <td>Từ 23h45 đến 24h00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+
+             </tfoot>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {% endblock %}
 
 
@@ -71,20 +798,12 @@
 <!-- Morris.js charts -->
 <script src="{% static 'dashboard/bower_components/raphael/raphael.min.js' %}"></script>
 <script src="{% static 'dashboard/bower_components/morris.js/morris.min.js' %}"></script>
-<!-- Sparkline -->
-<script src="{% static 'dashboard/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js' %}"></script>
-<!-- jvectormap -->
-<script src="{% static 'dashboard/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js' %}"></script>
-<script src="{% static 'dashboard/plugins/jvectormap/jquery-jvectormap-world-mill-en.js' %}"></script>
-<!-- jQuery Knob Chart -->
+
+
 <script src="{% static 'dashboard/bower_components/jquery-knob/dist/jquery.knob.min.js' %}"></script>
-<!-- daterangepicker -->
-<script src="{% static 'dashboard/bower_components/moment/min/moment.min.js' %}"></script>
-<script src="{% static 'dashboard/bower_components/bootstrap-daterangepicker/daterangepicker.js' %}"></script>
-<!-- datepicker -->
-<script src="{% static 'dashboard/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js' %}"></script>
-<!-- Bootstrap WYSIHTML5 -->
-<script src="{% static 'dashboard/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js' %}"></script>
+
+
+
 <!-- Slimscroll -->
 <script src="{% static 'dashboard/bower_components/jquery-slimscroll/jquery.slimscroll.min.js' %}"></script>
 <!-- FastClick -->
@@ -92,8 +811,7 @@
 <!-- AdminLTE App -->
 <script src="{% static 'dashboard/dist/js/adminlte.min.js' %}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{% static 'dashboard/dist/js/pages/dashboard.js' %}"></script>
-<!-- AdminLTE for demo purposes -->
+
 <script src="{% static 'dashboard/dist/js/demo.js' %}"></script>
 
 
@@ -101,23 +819,14 @@
 <script src="{% static 'dashboard/bower_components/Flot/jquery.flot.js' %}"></script>
 <!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
 <script src="{% static 'dashboard/bower_components/Flot/jquery.flot.resize.js' %}"></script>
-<!-- FLOT PIE PLUGIN - also used to draw donut charts -->
-<script src="{% static 'dashboard/bower_components/Flot/jquery.flot.pie.js' %}"></script>
-<!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
+
 <script src="{% static 'dashboard/bower_components/Flot/jquery.flot.categories.js' %}"></script>
 <!-- ChartJS -->
 <script src="{% static 'dashboard/bower_components/chart.js/Chart.js' %}"></script>
-<script src="{% static 'dashboard/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js' %}"></script>
-<script src="{% static 'dashboard/plugins/jvectormap/jquery-jvectormap-world-mill-en.js' %}"></script>
-<script src="{% static 'dashboard/dist/js/pages/dashboard2.js' %}"></script>
 
-<script src="{% static 'dashboard/myscript/area.js' %}"></script>
+
 <script src="{% static 'dashboard/myscript/interactive.js' %}"></script>
-<script src="{% static 'dashboard/myscript/barchar1.js' %}"></script>
-       <script>
 
-
-       </script>
 
         {% endblock %}
 
