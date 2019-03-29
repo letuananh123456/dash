@@ -11,6 +11,7 @@ urlpatterns = [
     path('location-contact/', dash_view.LocationcontactView.as_view(), name='locationcontact'),
     path('day-success/', dash_view.DaysuccessView.as_view(), name='daysuccess'),
     path('month-success/', dash_view.MonthsuccessView.as_view(), name='monthsuccess'),
+    path('channel-success/', dash_view.ChannelsuccessView.as_view(), name='channelsuccess'),
     path('agent-total/', dash_view.AgenttotalView.as_view(), name='agenttotal'),
     path('new-agent/', dash_view.NewagentView.as_view(), name='newagent'),
     path('agent-channel/', dash_view.AgentchannelView.as_view(), name='agentchannel'),
