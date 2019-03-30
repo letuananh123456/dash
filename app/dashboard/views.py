@@ -2,6 +2,10 @@ from django.shortcuts import render, redirect
 from django.views import View
 from .models import MonthContact
 from .models import ChannelContact
+from .models import AgentTotal
+from .models import Channel
+import numpy as np
+import json
 
 class DashboardView(View):
     def get(self, request):
@@ -33,30 +37,32 @@ class MonthcontactView(View):
 
 class ChannelcontactView(View):
     def get(self, request):
-        def get(self, request):
-            list_contact = MonthContact.objects.all()
-            count_list_contact = list_contact.count()
-            list_contact = list_contact[count_list_contact - 24:]
-            last_year = list_contact[:12]
-            list_current_year = list_contact[12:]
-            list_data = zip(last_year, list_current_year)
 
-            context = {
-                'list_data': list_data,
-                'year': list_current_year[0].get_year
+        list_contact_truyenthong = ChannelContact.objects.filter(distribution_id=1)
+        list_contact_nganhang = ChannelContact.objects.filter(distribution_id=2)
 
-            }
+        count_list_contact_truyenthong = list_contact_truyenthong.count()
+        list_contact_truyenthong = list_contact_truyenthong[count_list_contact_truyenthong - 24:]
+        last_year = list_contact_truyenthong[:12]
+        list_current_year = list_contact_truyenthong[12:]
+        list_data_truyenthong = zip(last_year, list_current_year)
 
+        count_list_contact_nganhang = list_contact_nganhang.count()
+        list_contact_nganhang = list_contact_nganhang[count_list_contact_nganhang - 24:]
+        last_year = list_contact_nganhang[:12]
+        list_current_year = list_contact_nganhang[12:]
+        list_data_nganhang = zip(last_year, list_current_year)
 
-
-        return render(request, 'dashboard/customer_contact/channel_contact.html')
-
+        context = {
+            'list_data_truyenthong': list_data_truyenthong,
+            'list_data_nganhang': list_data_nganhang,
+        }
+        return render(request, 'dashboard/customer_contact/channel_contact.html', context)
 
 
 class LocationcontactView(View):
     def get(self, request):
         return render(request, 'dashboard/customer_contact/location_contact.html')
-
 
 
 class DaysuccessView(View):
@@ -78,7 +84,29 @@ class ChannelsuccessView(View):
 
 class AgenttotalView(View):
     def get(self, request):
-        return render(request, 'dashboard/agent_statistics/agent_total.html')
+            list_agent = AgentTotal.objects.all()
+            count_list_agent = list_agent.count()
+            list_agent = list_agent[count_list_agent - 24:]
+            last_year = list_agent[:12]
+            list_current_year = list_agent[12:].values_list()
+
+            #ratio = list_current_year.number_agent/last_year.number_agent
+            lis1 = last_year.values_list('number_agent', flat=True)
+            lis2 = list_current_year.values_list('number_agent', flat=True)
+            li1 = [i for i in lis1]
+            li2 = [i for i in lis2]
+            a = np.array(li1)
+            b = np.array(li2)
+            ratio = b/a
+            list_data = zip(lis1, lis2, ratio)
+            diagram1 = json.dumps(li1)
+            diagram2 = json.dumps(li2)
+            context = {
+                'list_data': list_data,
+                'diagram1': diagram1,
+                'diagram2': diagram2
+            }
+            return render(request, 'dashboard/agent_statistics/agent_total.html', context)
 
 
 class NewagentView(View):

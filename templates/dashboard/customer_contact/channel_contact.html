@@ -56,10 +56,10 @@
                 </button>
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
-            </div>
-            <div class="box-body chart-responsive">
+              </div>
+              <div class="box-body chart-responsive">
               <div class="chart2" id="bar-chart22" style="height: 300px;"></div>
-            </div>
+              </div>
             <!-- /.box-body -->
           </div>
           <!-- /.box -->
@@ -93,94 +93,6 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Tháng 1
-                  </td>
-                  <td>Truyền thống</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Tháng 2
-                  </td>
-                  <td>Truyền thống</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Tháng 3
-                  </td>
-                  <td>Truyền thống</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Tháng 4
-                  </td>
-                  <td>Truyền thống</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Tháng 5</td>
-                  <td>Truyền thống</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Tháng 6</td>
-                  <td>Truyền thống</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Tháng 7</td>
-                  <td>Truyền thống</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Tháng 8</td>
-                  <td>Truyền thống</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Tháng 9</td>
-                  <td>Truyền thống</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Tháng 10</td>
-                  <td>Truyền thống</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>11</td>
-                  <td>Tháng 11</td>
-                  <td>Truyền thống</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>Tháng 12</td>
-                  <td>Truyền thống</td>
-                  <td></td>
-                  <td></td>
-                </tr>
 
 
              </tfoot>
@@ -213,95 +125,21 @@
                 </tr>
                 </thead>
                 <tbody>
+                {% for item in list_data_nganhang %}
                 <tr>
-                  <td>1</td>
-                  <td>Tháng 1
+                  <td>{{ forloop.counter }}</td>
+                  <td>Tháng {{ forloop.counter }}
                   </td>
                   <td>Ngân hàng</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Tháng 2
-                  </td>
-                  <td>Ngân hàng</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Tháng 3
-                  </td>
-                  <td>Ngân hàng</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Tháng 4
-                  </td>
-                  <td>Ngân hàng</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Tháng 5</td>
-                  <td>Ngân hàng</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Tháng 6</td>
-                  <td>Ngân hàng</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Tháng 7</td>
-                  <td>Ngân hàng</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Tháng 8</td>
-                  <td>Ngân hàng</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Tháng 9</td>
-                  <td>Ngân hàng</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Tháng 10</td>
-                  <td>Ngân hàng</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>11</td>
-                  <td>Tháng 11</td>
-                  <td>Ngân hàng</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>Tháng 12</td>
-                  <td>Ngân hàng</td>
-                  <td></td>
-                  <td></td>
+
+                     {% for it2 in item %}
+
+                  <td>{{ it2.number_customer }}</td>
+
+                    {% endfor %}
                 </tr>
 
+                {% endfor %}
 
              </tfoot>
               </table>

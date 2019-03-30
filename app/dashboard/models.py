@@ -15,6 +15,7 @@ class MonthContact(models.Model):
 
 
 class Channel(models.Model):
+    id = models.IntegerField(primary_key=True)
     name_chanel = models.CharField(max_length=200)
 
     def __str__(self):
@@ -28,5 +29,20 @@ class ChannelContact(models.Model):
 
     def __str__(self):
         return 'Khách hàng tiếp cận %s '%self.created_time
+
+
+class AgentTotal(models.Model):
+    number_agent = models.IntegerField(default=0)
+    created_time = models.DateTimeField(null=True)
+
+    def __str__(self):
+        return 'Tổng số đại lý %s '%self.created_time
+
+
+
+
+
+
+
 
 

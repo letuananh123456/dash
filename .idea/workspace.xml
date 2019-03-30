@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe98960c-8085-4c25-afce-bc80406ebfd8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/dashboard/success_rate/channel_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dash.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dash.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/celery-worker.log" beforeDir="false" afterPath="$PROJECT_DIR$/celery-worker.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dashboard/myscript/agent_total.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/dashboard/myscript/agent_total.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/dashboard/myscript/channel_contact1.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/dashboard/myscript/channel_contact1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/agent_statistics/agent_total.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/agent_statistics/agent_total.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/dashboard/customer_contact/channel_contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/customer_contact/channel_contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/customer_contact/month_contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/customer_contact/month_contact.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/dashboard/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="226">
+              <caret line="34" column="16" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="16" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -42,10 +38,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/dashboard/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="285">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/dashboard/agent_statistics/agent_total.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
+              <folding>
+                <element signature="n#block#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -54,17 +62,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/channel_contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="410" column="28" selection-start-line="410" selection-start-column="25" selection-end-line="410" selection-end-column="28" />
+            <state relative-caret-position="-435">
+              <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/dashboard/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="267">
+              <caret line="102" column="38" lean-forward="true" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -73,56 +81,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dashboard/success_rate/channel_success.html">
+        <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/day_contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="164" column="22" lean-forward="true" selection-start-line="164" selection-start-column="22" selection-end-line="164" selection-end-column="22" />
-              <folding>
-                <element signature="n#block#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="784" selection-start-line="784" selection-end-line="784" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/dashboard/urls.py">
+        <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/location_contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="13" column="82" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="8850">
+              <caret line="590" column="89" selection-start-line="590" selection-start-column="89" selection-end-line="590" selection-end-column="89" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dashboard/base.html">
+        <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/month_contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1274">
-              <caret line="89" column="112" selection-start-line="89" selection-start-column="112" selection-end-line="89" selection-end-column="112" />
-              <folding>
-                <element signature="n#block#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dashboard/success_rate/day_success.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="184" selection-start-line="184" selection-end-line="184" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dashboard/success_rate/month_success.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="219" lean-forward="true" selection-start-line="103" selection-end-line="219" />
+            <state relative-caret-position="1275">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
@@ -130,11 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/dashboard/agent_statistics/new_agent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="517">
               <caret line="250" selection-end-line="264" />
-              <folding>
-                <element signature="n#block#0;n#!!top" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -184,7 +161,6 @@
         <option value="$PROJECT_DIR$/static/dashboard/myscript/channel_contact2.js" />
         <option value="$PROJECT_DIR$/static/dashboard/myscript/new_agent.js" />
         <option value="$PROJECT_DIR$/templates/dashboard/agent_statistics/table_agent.html" />
-        <option value="$PROJECT_DIR$/static/dashboard/myscript/agent_total.js" />
         <option value="$PROJECT_DIR$/static/dashboard/myscript/agent_channel.js" />
         <option value="$PROJECT_DIR$/templates/dashboard/mail/mail.html" />
         <option value="$PROJECT_DIR$/static/dashboard/myscript/calendar.js" />
@@ -203,7 +179,6 @@
         <option value="$PROJECT_DIR$/static/dashboard/dist/daysuccess.css" />
         <option value="$PROJECT_DIR$/templates/dashboard/success_rate/month_success.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/success_rate/day_success.html" />
-        <option value="$PROJECT_DIR$/templates/dashboard/agent_statistics/agent_total.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/agent_statistics/new_agent.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/product_statistics/main_product.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/product_statistics/sup_product.html" />
@@ -213,15 +188,17 @@
         <option value="$PROJECT_DIR$/templates/dashboard/mailbox/read.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/user_agent/user.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/search_agent/search.html" />
-        <option value="$PROJECT_DIR$/templates/dashboard/customer_contact/month_contact.html" />
-        <option value="$PROJECT_DIR$/static/dashboard/myscript/channel_contact1.js" />
-        <option value="$PROJECT_DIR$/templates/dashboard/customer_contact/channel_contact.html" />
         <option value="$PROJECT_DIR$/app/dashboard/urls.py" />
         <option value="$PROJECT_DIR$/templates/dashboard/base.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/success_rate/channel_success.html" />
-        <option value="$PROJECT_DIR$/app/dashboard/admin.py" />
+        <option value="$PROJECT_DIR$/static/dashboard/myscript/channel_contact1.js" />
+        <option value="$PROJECT_DIR$/templates/dashboard/customer_contact/month_contact.html" />
+        <option value="$PROJECT_DIR$/templates/dashboard/customer_contact/channel_contact.html" />
         <option value="$PROJECT_DIR$/app/dashboard/models.py" />
+        <option value="$PROJECT_DIR$/app/dashboard/admin.py" />
         <option value="$PROJECT_DIR$/app/dashboard/views.py" />
+        <option value="$PROJECT_DIR$/static/dashboard/myscript/agent_total.js" />
+        <option value="$PROJECT_DIR$/templates/dashboard/agent_statistics/agent_total.html" />
       </list>
     </option>
   </component>
@@ -237,6 +214,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,7 +231,7 @@
               <item name="dash" type="b2602c69:ProjectViewProjectNode" />
               <item name="dash" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dash" type="b2602c69:ProjectViewProjectNode" />
@@ -349,7 +327,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,16 +399,29 @@
       <workItem from="1553655849338" duration="18802000" />
       <workItem from="1553739856416" duration="24807000" />
       <workItem from="1553824288044" duration="25385000" />
+      <workItem from="1553860924307" duration="811000" />
+      <workItem from="1553910986483" duration="9334000" />
+      <workItem from="1553928936483" duration="9029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181970000" />
+    <option name="totallyTimeSpent" value="201144000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28745162" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29740188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -440,13 +430,13 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32925585" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32925585" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4077472" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.38022426" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32925585" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -499,7 +489,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/dashboard/myscript/barchar2.js" />
     <entry file="file://$PROJECT_DIR$/static/dashboard/myscript/barchar22.js" />
     <entry file="file://$PROJECT_DIR$/static/dashboard/myscript/barchar11.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -513,13 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/dashboard/myscript/channel_contact2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/dashboard/success_rate/table_success.html" />
     <entry file="file://$PROJECT_DIR$/static/dashboard/myscript/new_agent.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -527,16 +509,6 @@
           <caret line="263" selection-start-line="263" selection-end-line="263" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/dashboard/myscript/agent_total.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -621,13 +593,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/dashboard/agent_statistics/table_agent.html" />
     <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/table_contact.html" />
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/day_contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="784" lean-forward="true" selection-start-line="784" selection-end-line="784" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/dashboard/myscript/barchar1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -637,13 +602,6 @@
             <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/location_contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="590" column="89" lean-forward="true" selection-start-line="590" selection-start-column="89" selection-end-line="590" selection-end-column="89" />
         </state>
       </provider>
     </entry>
@@ -665,16 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/agent_statistics/agent_total.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="232" selection-start-line="232" selection-end-line="232" />
-          <folding>
-            <element signature="n#block#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -775,61 +723,10 @@
     <entry file="file://$PROJECT_DIR$/app/dashboard/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/dashboard/myscript/channel_contact1.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/month_contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1264">
-          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/channel_contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="410" column="28" selection-start-line="410" selection-start-column="25" selection-end-line="410" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/agent_statistics/new_agent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="250" selection-end-line="264" />
-          <folding>
-            <element signature="n#block#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/success_rate/day_success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="184" selection-start-line="184" selection-end-line="184" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/success_rate/month_success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="219" lean-forward="true" selection-start-line="103" selection-end-line="219" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="89" column="112" selection-start-line="89" selection-start-column="112" selection-end-line="89" selection-end-column="112" />
-          <folding>
-            <element signature="n#block#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/dashboard/success_rate/channel_success.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="164" column="22" lean-forward="true" selection-start-line="164" selection-start-column="22" selection-end-line="164" selection-end-column="22" />
+        <state relative-caret-position="2460">
+          <caret line="164" column="22" selection-start-line="164" selection-start-column="22" selection-end-line="164" selection-end-column="22" />
           <folding>
             <element signature="n#block#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -839,7 +736,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/dashboard/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
+        <state relative-caret-position="180">
           <caret line="13" column="82" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -847,32 +744,125 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="89" column="112" selection-start-line="89" selection-start-column="112" selection-end-line="89" selection-end-column="112" />
+          <folding>
+            <element signature="n#block#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/success_rate/day_success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2760">
+          <caret line="184" selection-start-line="184" selection-end-line="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/success_rate/month_success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3285">
+          <caret line="219" selection-start-line="103" selection-end-line="219" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/dashboard/myscript/channel_contact1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/dashboard/myscript/channel_contact2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/location_contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8850">
+          <caret line="590" column="89" selection-start-line="590" selection-start-column="89" selection-end-line="590" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/month_contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/agent_statistics/new_agent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="250" selection-end-line="264" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/day_contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="784" selection-start-line="784" selection-end-line="784" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/dashboard/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="285">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/dashboard/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="226">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="16" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/channel_contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-435">
+          <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/dashboard/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="267">
+          <caret line="102" column="38" lean-forward="true" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/dashboard/myscript/agent_total.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/agent_statistics/agent_total.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
+          <folding>
+            <element signature="n#block#0;n#!!top" />
           </folding>
         </state>
       </provider>
