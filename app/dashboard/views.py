@@ -4,6 +4,7 @@ from .models import MonthContact
 from .models import ChannelContact
 from .models import AgentTotal
 from .models import Channel
+from .models import NewAgent
 import numpy as np
 import json
 
@@ -97,7 +98,7 @@ class AgenttotalView(View):
             li2 = [i for i in lis2]
             a = np.array(li1)
             b = np.array(li2)
-            ratio = b/a
+            ratio = a/b
             list_data = zip(lis1, lis2, ratio)
             diagram1 = json.dumps(li1)
             diagram2 = json.dumps(li2)
@@ -111,8 +112,29 @@ class AgenttotalView(View):
 
 class NewagentView(View):
     def get(self, request):
-        return render(request, 'dashboard/agent_statistics/new_agent.html')
+        list_agent = NewAgent.objects.all()
+        count_list_agent = list_agent.count()
+        list_agent = list_agent[count_list_agent - 24:]
+        last_year = list_agent[:12]
+        list_current_year = list_agent[12:].values_list()
 
+        # ratio = list_current_year.number_agent/last_year.number_agent
+        lis1 = last_year.values_list('number_agent', flat=True)
+        lis2 = list_current_year.values_list('number_agent', flat=True)
+        li1 = [i for i in lis1]
+        li2 = [i for i in lis2]
+        a = np.array(li1)
+        b = np.array(li2)
+        ratio = a/b
+        list_data = zip(lis1, lis2, ratio)
+        diagram1 = json.dumps(li1)
+        diagram2 = json.dumps(li2)
+        context = {
+            'list_data': list_data,
+            'diagram1': diagram1,
+            'diagram2': diagram2
+        }
+        return render(request, 'dashboard/agent_statistics/new_agent.html', context)
 
 class AgentchannelView(View):
     def get(self, request):

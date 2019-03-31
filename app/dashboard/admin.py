@@ -3,6 +3,7 @@ from .models import MonthContact
 from .models import Channel
 from .models import ChannelContact
 from .models import AgentTotal
+from .models import NewAgent
 
 
 class ChannelContactAdmin(admin.ModelAdmin):
@@ -17,8 +18,15 @@ class AgentTotalAdmin(admin.ModelAdmin):
     list_display = ('id', 'number_agent', 'created_time')
 
 
+class NewAgentAdmin(admin.ModelAdmin):
+    list_display = ('id', 'number_agent', 'created_time')
+
+
+
+
 # Register your models here.
 admin.site.register(MonthContact)
 admin.site.register(Channel, ChannelAdmin)
 admin.site.register(ChannelContact, ChannelContactAdmin)
 admin.site.register(AgentTotal, AgentTotalAdmin)
+admin.site.register(NewAgent, NewAgentAdmin)

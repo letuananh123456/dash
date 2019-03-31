@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="{% static 'dashboard/bower_components/morris.js/morris.css' %}">
 
         {% endblock %}
-  {% block content %}
+     {% block content %}
       <div class="row">
 
 
@@ -92,8 +92,22 @@
                   <th>Số khách hàng tiếp cận cùng kỳ năm trước</th>
                 </tr>
                 </thead>
-                <tbody>
+                 <tbody>
+                {% for item in list_data_truyenthong %}
+                <tr>
+                  <td>{{ forloop.counter }}</td>
+                  <td>Tháng {{ forloop.counter }}
+                  </td>
+                  <td>Truyền thống</td>
 
+                     {% for it2 in item %}
+
+                  <td>{{ it2.number_customer }}</td>
+
+                    {% endfor %}
+                </tr>
+
+                {% endfor %}
 
              </tfoot>
               </table>
@@ -183,6 +197,7 @@
 
 
  {% endblock %}
+
 
 
 

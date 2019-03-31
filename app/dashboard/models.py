@@ -38,6 +38,13 @@ class AgentTotal(models.Model):
     def __str__(self):
         return 'Tổng số đại lý %s '%self.created_time
 
+class NewAgent(models.Model):
+    number_agent = models.IntegerField(default=0)
+    created_time = models.DateTimeField(null=True)
+
+    def __str__(self):
+        return 'Tổng số đại lý mới %s ' % self.created_time
+
 
 
 
