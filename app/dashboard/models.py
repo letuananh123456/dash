@@ -45,6 +45,10 @@ class NewAgent(models.Model):
     def __str__(self):
         return 'Tổng số đại lý mới %s ' % self.created_time
 
+class AgentChannel(models.Model):
+    distribution = models.ForeignKey(Channel, on_delete=models.CASCADE)
+    number_agent = models.IntegerField(default=0)
+    created_time = models.DateTimeField(null=True)
 
 
 

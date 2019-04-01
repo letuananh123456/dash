@@ -222,9 +222,10 @@
      */
 
     var donutData = [
-      { label: 'Series2', data: 30, color: '#3c8dbc' },
-      { label: 'Series3', data: 20, color: '#0073b7' },
-      { label: 'Series4', data: 50, color: '#00c0ef' }
+      { label: 'Series2', data: 30.2, color: '#3c8dbc' },
+      { label: 'Series3', data: 20.8, color: '#0073b7' },
+      { label: 'Series4', data: 40.2, color: '#00c0ef' },
+      { label: 'Series5', data: 8.8, color: '#00c0ee' },
     ]
     $.plot('#donut-chart', donutData, {
       series: {

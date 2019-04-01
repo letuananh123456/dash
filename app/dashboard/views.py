@@ -7,6 +7,7 @@ from .models import Channel
 from .models import NewAgent
 import numpy as np
 import json
+from .ultils import sum_agency_to_m, get_year
 
 class DashboardView(View):
     def get(self, request):
@@ -138,7 +139,18 @@ class NewagentView(View):
 
 class AgentchannelView(View):
     def get(self, request):
-        return render(request, 'dashboard/agent_statistics/agent_channel.html')
+        yyyy = get_year()
+        print_array = []
+        for i in range(1, 13):
+            sub_item = {}
+            sub_item['m'] = i
+            sub_item['data'] = sum_agency_to_m(i, yyyy)
+            print_array.append(sub_item)
+
+        context = {
+            'list_data': print_array
+        }
+        return render(request, 'dashboard/agent_statistics/agent_channel.html', context)
 
 
 class MainproductView(View):

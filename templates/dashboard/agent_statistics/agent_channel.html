@@ -26,7 +26,7 @@
 
 
     {% block content %}
-        <div class="row">
+    <div class="row">
             <div class="col-xs-12">
 
         <!-- DONUT CHART -->
@@ -73,99 +73,25 @@
                   <th>Thời gian</th>
                   <th>Kênh phân phối</th>
                   <th>Tồng số đại lý</th>
-                  <th>Tỷ trọng</th>
+                  <th>Tỷ trọng (%)</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>
-                  </td>
-                  <td>Truyền thống</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>
-                  </td>
-                  <td>Ngân hàng</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>11</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
+                {% for list_m in list_data %}
 
+
+                    {% for item in list_m.data %}
+                    <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>Tháng {{ list_m.m }}</td>
+                        {% for ia in item %}
+                            <td>{{ ia }}</td>
+                            {% endfor %}
+                    </tr>
+                    {% endfor %}
+
+
+                {% endfor %}
 
              </tfoot>
               </table>
