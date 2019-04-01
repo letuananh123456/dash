@@ -141,11 +141,18 @@ class AgentchannelView(View):
     def get(self, request):
         yyyy = get_year()
         print_array = []
+        list_weight = []
         for i in range(1, 13):
             sub_item = {}
             sub_item['m'] = i
             sub_item['data'] = sum_agency_to_m(i, yyyy)
             print_array.append(sub_item)
+
+        last_print_array = print_array[-1]
+        k = last_print_array['data']
+        print(k)
+        g = [list(a) for a in k]
+        print(g)
 
         context = {
             'list_data': print_array
