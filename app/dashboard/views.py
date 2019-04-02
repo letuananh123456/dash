@@ -1,14 +1,13 @@
 from django.shortcuts import render, redirect
 from django.views import View
-from .models import MonthContact
+from .models import MonthContact, ChannelSuccess
 from .models import ChannelContact
 from .models import AgentTotal
 from .models import Channel
 from .models import NewAgent
 import numpy as np
 import json
-from .ultils import sum_agency_to_m, get_year
-
+from .ultils import *
 class DashboardView(View):
     def get(self, request):
         return render(request, 'dashboard/index.html')
@@ -81,7 +80,22 @@ class MonthsuccessView(View):
 
 class ChannelsuccessView(View):
     def get(self, request):
-        return render(request, 'dashboard/success_rate/channel_success.html')
+        yyyy = get_year()
+        print_array = []
+
+        for i in range(1, 13):
+            sub_item = {}
+            sub_item['m'] = i
+            sub_data = number_customer_to_m(i, yyyy)
+            sub_item['data'] = sub_data
+            print_array.append(sub_item)
+            last_data = get_line_chart_print_value()
+        context = {
+            'list_data': print_array,
+            'last_data': last_data
+
+        }
+        return render(request, 'dashboard/success_rate/channel_success.html', context)
 
 
 class AgenttotalView(View):

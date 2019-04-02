@@ -17,6 +17,7 @@ class MonthContact(models.Model):
 class Channel(models.Model):
     id = models.IntegerField(primary_key=True)
     name_chanel = models.CharField(max_length=200)
+    color = models.TextField(default='rgb(66, 134, 244)')
 
     def __str__(self):
         return self.name_chanel
@@ -55,9 +56,6 @@ class ChannelSuccess(models.Model):
     number_customer = models.IntegerField(default=0)
     number_policy = models.IntegerField(default=0)
     created_time = models.DateTimeField(null=True)
-
-
-
 
 
 
