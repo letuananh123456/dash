@@ -137,18 +137,30 @@ class NewagentView(View):
         }
         return render(request, 'dashboard/agent_statistics/new_agent.html', context)
 
+
 class AgentchannelView(View):
     def get(self, request):
         yyyy = get_year()
         print_array = []
+        last_zip_object = []
+
         for i in range(1, 13):
             sub_item = {}
             sub_item['m'] = i
-            sub_item['data'] = sum_agency_to_m(i, yyyy)
+            sub_data = sum_agency_to_m(i, yyyy)
+            sub_item['data'] = sub_data
             print_array.append(sub_item)
+            h = [list(a) for a in sub_data]
+            if len(h) > 0:
+                last_zip_object = h
 
+        last_zip_object = np.array(last_zip_object)
+        split = np.hsplit(last_zip_object, 3)
+        ga = split[2].astype(float)
+        last_list_data = np.around(ga, 0)
         context = {
-            'list_data': print_array
+            'list_data': print_array,
+            'last_list_data': last_list_data
         }
         return render(request, 'dashboard/agent_statistics/agent_channel.html', context)
 
