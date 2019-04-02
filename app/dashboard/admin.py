@@ -5,7 +5,7 @@ from .models import ChannelContact
 from .models import AgentTotal
 from .models import NewAgent
 from .models import AgentChannel
-
+from .models import ChannelSuccess
 
 class ChannelContactAdmin(admin.ModelAdmin):
     list_display = ('id', 'distribution', 'number_customer', 'created_time')
@@ -24,8 +24,10 @@ class NewAgentAdmin(admin.ModelAdmin):
 
 
 class AgentChannelAdmin(admin.ModelAdmin):
-    list_display = ('id', 'number_agent', 'created_time')
+    list_display = ('id', 'distribution', 'number_agent', 'created_time')
 
+class ChannelSuccessAdmin(admin.ModelAdmin):
+    list_display = ('id', 'distribution', 'created_time', 'number_customer', 'number_policy')
 
 
 
@@ -36,4 +38,4 @@ admin.site.register(ChannelContact, ChannelContactAdmin)
 admin.site.register(AgentTotal, AgentTotalAdmin)
 admin.site.register(NewAgent, NewAgentAdmin)
 admin.site.register(AgentChannel, AgentChannelAdmin)
-
+admin.site.register(ChannelSuccess, ChannelSuccessAdmin)

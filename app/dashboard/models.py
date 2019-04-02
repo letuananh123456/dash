@@ -50,7 +50,11 @@ class AgentChannel(models.Model):
     number_agent = models.IntegerField(default=0)
     created_time = models.DateTimeField(null=True)
 
-
+class ChannelSuccess(models.Model):
+    distribution = models.ForeignKey(Channel, on_delete=models.CASCADE)
+    number_customer = models.IntegerField(default=0)
+    number_policy = models.IntegerField(default=0)
+    created_time = models.DateTimeField(null=True)
 
 
 

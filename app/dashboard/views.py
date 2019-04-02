@@ -150,7 +150,7 @@ class AgentchannelView(View):
             sub_data = sum_agency_to_m(i, yyyy)
             sub_item['data'] = sub_data
             print_array.append(sub_item)
-            h = [list(a) for a in sub_data]
+            h = [list(a) for a in sum_agency_to_m(i, yyyy)]
             if len(h) > 0:
                 last_zip_object = h
 
