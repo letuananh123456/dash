@@ -193,7 +193,8 @@
      */
 
     var bar_data = {
-      data : [['January', 10], ['February', 8], ['March', 4], ['April', 13], ['May', 17], ['June', 9]],
+      data : [['Tháng 1', 10], ['Tháng 2', 8], ['Tháng 3', 4], ['Tháng 4', 13], ['Tháng 5', 17], ['Tháng 6', 9],
+        ['Tháng 7', 10], ['Tháng 8', 8], ['Tháng 9', 4], ['Tháng 10', 13], ['Tháng 11', 17], ['Tháng 12', 9]],
       color: '#3c8dbc'
     }
     $.plot('#bar-chart', [bar_data], {

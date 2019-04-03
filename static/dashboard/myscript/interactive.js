@@ -97,20 +97,16 @@
      */
     //LINE randomly generated data
 
-    var sin = [], cos = []
-    for (var i = 0; i < 14; i += 0.5) {
-      sin.push([i, Math.sin(i)])
-      cos.push([i, Math.cos(i)])
-    }
+
+    var bb = [[1, 2], [2, 6], [3, 4], [4, 5], [5, 7], [6, 9], [7, 3], [8, 4], [9, 6], [10, 4], [11, 3], [12, 9]]
+
+
+
     var line_data1 = {
-      data : sin,
+      data : bb,
       color: '#3c8dbc'
     }
-    var line_data2 = {
-      data : cos,
-      color: '#00c0ef'
-    }
-    $.plot('#line-chart', [line_data1, line_data2], {
+    $.plot('#line-chart', [line_data1], {
       grid  : {
         hoverable  : true,
         borderColor: '#f3f3f3',
@@ -156,6 +152,7 @@
         $('#line-chart-tooltip').hide()
       }
 
+
     })
     /* END LINE CHART */
 
@@ -193,7 +190,8 @@
      */
 
     var bar_data = {
-      data : [['January', 10], ['February', 8], ['March', 4], ['April', 13], ['May', 17], ['June', 9]],
+      data : [['Tháng 1', 10], ['Tháng 2', 8], ['Tháng 3', 4], ['Tháng 4', 13], ['Tháng 5', 17], ['Tháng 6', 9],
+        ['Tháng 7', 10], ['Tháng 8', 8], ['Tháng 9', 4], ['Tháng 10', 13], ['Tháng 11', 17], ['Tháng 12', 9]],
       color: '#3c8dbc'
     }
     $.plot('#bar-chart', [bar_data], {

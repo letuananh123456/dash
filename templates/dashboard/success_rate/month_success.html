@@ -26,79 +26,29 @@
         {% endblock %}
   {% block content %}
 <div class="row">
-<div class="col-xs-12">
-<h2>Tháng 1</h2>
-<div class="bar">
-  <div class="bar-inner bar-90" data-percent="90%"></div>
+        <div class="col-xs-12">
+
+         <!-- Line chart -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <i class="fa fa-bar-chart-o"></i>
+
+              <h3 class="box-title">Thống kê tỷ lệ thành công theo tháng</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <div class="box-body">
+              <div id="line-chart" style="height: 300px;"></div>
+            </div>
+            <!-- /.box-body-->
+          </div>
+          <!-- /.box -->
+        </div>
 </div>
-
-<h2>Tháng 2</h2>
-<div class="bar">
-  <div class="bar-inner bar-80" data-percent="80%"></div>
-</div>
-
-<h2>Tháng 3</h2>
-<div class="bar">
-  <div class="bar-inner bar-90" data-percent="95%"></div>
-</div>
-
-<h2>Tháng 4</h2>
-<div class="bar">
-  <div class="bar-inner bar-80" data-percent="70%"></div>
-</div>
-
-
-<h2>Tháng 5</h2>
-<div class="bar">
-  <div class="bar-inner bar-80" data-percent="70%"></div>
-</div>
-
-
-<h2>Tháng 6</h2>
-<div class="bar">
-  <div class="bar-inner bar-80" data-percent="70%"></div>
-</div>
-
-
-<h2>Tháng 7</h2>
-<div class="bar">
-  <div class="bar-inner bar-80" data-percent="70%"></div>
-</div>
-
-
-<h2>Tháng 8</h2>
-<div class="bar">
-  <div class="bar-inner bar-80" data-percent="70%"></div>
-</div>
-
-
-<h2>Tháng 9</h2>
-<div class="bar">
-  <div class="bar-inner bar-80" data-percent="70%"></div>
-</div>
-
-
-<h2>Tháng 10</h2>
-<div class="bar">
-  <div class="bar-inner bar-80" data-percent="70%"></div>
-</div>
-
-
-<h2>Tháng 11</h2>
-<div class="bar">
-  <div class="bar-inner bar-80" data-percent="70%"></div>
-</div>
-
-
-<h2>Tháng 12</h2>
-<div class="bar">
-  <div class="bar-inner bar-80" data-percent="70%"></div>
-</div>
-
-
-</div>
-</div>
-
 
 
 <br>
@@ -220,7 +170,8 @@
 
 
 
-
+       </div>
+</div>
 
 
 
@@ -291,7 +242,6 @@
 
 <script src="{% static 'dashboard/myscript/interactive.js' %}"></script>
 
-<script src="{% static 'dashboard/myscript/monthsuccess.js' %}"></script>
        <script>
 
 

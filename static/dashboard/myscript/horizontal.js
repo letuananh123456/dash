@@ -143,7 +143,18 @@ var ctx = document.getElementById('myChart');
             borderWidth: 1
         }]
     },
-    options: {responsive: true}
+    options: {
+    legend: {
+        display: false
+    },
+    tooltips: {
+        callbacks: {
+           label: function(tooltipItem) {
+                  return tooltipItem.yLabel;
+           }
+        }
+    }
+}
 });
 
 
