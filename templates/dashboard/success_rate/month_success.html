@@ -30,20 +30,14 @@
 
          <!-- Line chart -->
           <div class="box box-primary">
-            <div class="box-header with-border">
-              <i class="fa fa-bar-chart-o"></i>
 
-              <h3 class="box-title">Thống kê tỷ lệ thành công theo tháng</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
             <div class="box-body">
-              <div id="line-chart" style="height: 300px;"></div>
+
+                <canvas id="canvas1"></canvas>
             </div>
+              <div style="width:75%;">
+
+	</div>
             <!-- /.box-body-->
           </div>
           <!-- /.box -->
@@ -239,13 +233,79 @@
 <script src="{% static 'dashboard/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js' %}"></script>
 <script src="{% static 'dashboard/plugins/jvectormap/jquery-jvectormap-world-mill-en.js' %}"></script>
 
+       <script src="https://www.chartjs.org/dist/2.8.0/Chart.min.js"></script>
 
-<script src="{% static 'dashboard/myscript/interactive.js' %}"></script>
 
        <script>
 
 
        </script>
+       <script>
+		var config = {
+			type: 'line',
+			data: {
+				labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7',
+                    'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+				datasets: [{
+					label: 'dataset - big points',
+					data: [
+						2,
+						3,
+						2,
+						8,
+						1,
+						3,
+						1,
+                        2,
+						8,
+						1,
+						3,
+						1
+					],
+					backgroundColor: '#d64d3e',
+					borderColor: '#d64d3e',
+					fill: false,
+					borderDash: [5, 5],
+					pointRadius: 15,
+					pointHoverRadius: 10,
+				},]
+			},
+			options: {
+				responsive: true,
+				legend: {
+					position: 'bottom',
+				},
+				hover: {
+					mode: 'index'
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Month'
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Value'
+						}
+					}]
+				},
+				title: {
+					display: true,
+					text: 'Chart.js Line Chart - Different point sizes'
+				}
+			}
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('canvas1').getContext('2d');
+			window.myLine = new Chart(ctx, config);
+		};
+	</script>
 
         {% endblock %}
 
