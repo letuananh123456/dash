@@ -64,3 +64,8 @@ class DaySuccess(models.Model):
     number_policy = models.IntegerField(default=0)
     created_time = models.DateTimeField(null=True)
 
+
+class MonthSuccess(models.Model):
+    number_customer = models.IntegerField(default=0)
+    number_policy = models.IntegerField(default=0)
+    created_time = models.DateTimeField(null=True)

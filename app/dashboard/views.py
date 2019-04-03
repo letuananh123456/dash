@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import View
-from .models import MonthContact, ChannelSuccess
+from .models import MonthContact, ChannelSuccess, DaySuccess, MonthSuccess
 from .models import ChannelContact
 from .models import AgentTotal
 from .models import Channel
@@ -68,13 +68,71 @@ class LocationcontactView(View):
 
 class DaysuccessView(View):
     def get(self, request):
-        return render(request, 'dashboard/success_rate/day_success.html')
+        list_customer = DaySuccess.objects.all()
+        count_list_customer = list_customer.count()
+        last_month = list_customer[count_list_customer - 30:]
+        last_m_1 = last_month.values_list('number_customer', flat=True)
+        last_m_1_array = np.array(last_m_1)
+        sum_last_m_1 = sum(last_m_1_array)
+        last_m_2 = last_month.values_list('number_policy', flat=True)
+        last_m_2_array = np.array(last_m_2)
+        sum_last_m_2 = sum(last_m_2_array)
+        ratio_30 = sum_last_m_2/sum_last_m_1
+        list_data_30 = [sum_last_m_1, sum_last_m_2, ratio_30]
+        last_week = list_customer[count_list_customer - 7:]
+        last_w_1 = last_week.values_list('number_customer', flat=True)
+        last_w_1_array = np.array(last_w_1)
+        sum_last_w_1 = sum(last_w_1_array)
+        last_w_2 = last_month.values_list('number_policy', flat=True)
+        last_w_2_array = np.array(last_w_2)
+        sum_last_w_2 = sum(last_w_2_array)
+        ratio_7 = sum_last_w_2 / sum_last_w_1
+        list_data_7 = [sum_last_w_1, sum_last_w_2, ratio_7]
+        last_tree_day = list_customer[count_list_customer - 3:]
+        last_tree_1 = last_tree_day.values_list('number_customer', flat=True)
+        last_tree_1_array = np.array(last_tree_1)
+        sum_last_tree_1 = sum(last_tree_1_array)
+        last_tree_2 = last_month.values_list('number_policy', flat=True)
+        last_tree_2_array = np.array(last_tree_2)
+        sum_last_tree_2 = sum(last_tree_2_array)
+        ratio_3 = sum_last_tree_2 / sum_last_tree_1
+        list_data_3 = [sum_last_tree_1, sum_last_tree_2, ratio_3]
+        last_one_day = list_customer[count_list_customer - 1:]
+        last_one_1 = last_one_day.values_list('number_customer', flat=True)
+        last_one_1_array = np.array(last_one_1)
+        sum_last_one_1 = sum(last_one_1_array)
+        last_one_2 = last_one_day.values_list('number_policy', flat=True)
+        last_one_2_array = np.array(last_one_2)
+        sum_last_one_2 = sum(last_one_2_array)
+        ratio_1 = sum_last_one_2/sum_last_one_1
+        list_data_1 = [sum_last_one_1, sum_last_one_2, ratio_1]
+        context = {
+            'list_data_30': list_data_30,
+            'list_data_7': list_data_7,
+            'list_data_3': list_data_3,
+            'list_data_1': list_data_1,
+        }
+        return render(request, 'dashboard/success_rate/day_success.html', context)
 
 
 
 class MonthsuccessView(View):
     def get(self, request):
-        return render(request, 'dashboard/success_rate/month_success.html')
+        list_customer = MonthSuccess.objects.all()
+        count_list_customer = list_customer.count()
+        last_list = list_customer[count_list_customer - 12:]
+        last_customer = last_list.values_list('number_customer', flat=True)
+        last_customer_array = np.array(last_customer)
+        last_policy = last_list.values_list('number_policy', flat=True)
+        last_policy_array = np.array(last_policy)
+        ratio = last_policy_array/last_customer_array
+        list_data = zip(last_customer_array, last_policy_array, ratio)
+
+        context = {
+            'list_data': list_data
+
+        }
+        return render(request, 'dashboard/success_rate/month_success.html', context)
 
 
 
