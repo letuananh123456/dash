@@ -69,3 +69,17 @@ class MonthSuccess(models.Model):
     number_customer = models.IntegerField(default=0)
     number_policy = models.IntegerField(default=0)
     created_time = models.DateTimeField(null=True)
+
+class DayContact(models.Model):
+    number_customer = models.IntegerField(default=0)
+    created_time = models.DateTimeField(null=True)
+
+
+class Province(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name_province = models.CharField(max_length=200)
+
+class LocationContact(models.Model):
+    location = models.ForeignKey(Channel, on_delete=models.CASCADE)
+    number_customer = models.IntegerField(default=0)
+    created_time = models.DateTimeField(null=True)
