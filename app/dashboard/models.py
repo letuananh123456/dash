@@ -79,7 +79,11 @@ class Province(models.Model):
     id = models.IntegerField(primary_key=True)
     name_province = models.CharField(max_length=200)
 
+    def __str__(self):
+        return self.name_province
+
+
 class LocationContact(models.Model):
-    location = models.ForeignKey(Channel, on_delete=models.CASCADE)
+    location = models.ForeignKey(Province, on_delete=models.CASCADE)
     number_customer = models.IntegerField(default=0)
     created_time = models.DateTimeField(null=True)

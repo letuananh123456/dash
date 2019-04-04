@@ -4,7 +4,7 @@ from .models import MonthContact, ChannelSuccess, DaySuccess, MonthSuccess
 from .models import ChannelContact
 from .models import AgentTotal
 from .models import Channel
-from .models import NewAgent
+from .models import NewAgent, LocationContact
 import numpy as np
 import json
 from .ultils import *
@@ -22,7 +22,7 @@ class MonthcontactView(View):
     def get(self, request):
         list_contact = MonthContact.objects.all()
         count_list_contact = list_contact.count()
-        list_contact = list_contact[count_list_contact-24:]
+        list_contact = list_contact[count_list_contact - 24:]
         last_year = list_contact[:12]
         list_current_year = list_contact[12:]
         list_data = zip(last_year, list_current_year)
@@ -30,7 +30,6 @@ class MonthcontactView(View):
         context = {
             'list_data': list_data,
             'year': list_current_year[0].get_year
-
 
         }
         return render(request, 'dashboard/customer_contact/month_contact.html', context)
@@ -63,7 +62,21 @@ class ChannelcontactView(View):
 
 class LocationcontactView(View):
     def get(self, request):
-        return render(request, 'dashboard/customer_contact/location_contact.html')
+        list_customer = LocationContact.objects.all()
+        count_list_contact = list_customer.count()
+        list_customer = list_customer[count_list_contact - 63:]
+        name_province = list_customer.values_list('location__name_province', flat=True)
+        lis1 = list_customer.values_list('number_customer', flat=True)
+        a = np.array(lis1)
+        total_array = np.full(lis1.count(), sum(lis1))
+        weight = np.round(((lis1 / total_array) * 100), 2)
+        list_data = zip(list(name_province), a, weight)
+
+        context = {
+            'list_data': list_data
+
+        }
+        return render(request, 'dashboard/customer_contact/location_contact.html', context)
 
 
 class DaysuccessView(View):
