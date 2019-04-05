@@ -5,9 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/celery-worker.log" beforeDir="false" afterPath="$PROJECT_DIR$/celery-worker.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/customer_contact/day_contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/customer_contact/day_contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/product_statistics/main_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/product_statistics/main_product.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +18,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/dashboard/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -28,6 +26,15 @@
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/dashboard/product_statistics/main_product.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="110" column="30" lean-forward="true" selection-start-line="110" selection-start-column="30" selection-end-line="110" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -56,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/dashboard/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="23" />
+            <state relative-caret-position="329">
+              <caret line="113" column="19" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="19" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -74,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/dashboard/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="464">
+              <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -91,15 +98,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
               <caret line="88" column="36" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dashboard/success_rate/channel_success.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
             </state>
           </provider>
         </entry>
@@ -173,7 +171,6 @@
         <option value="$PROJECT_DIR$/static/dashboard/myscript/daysuccess.js" />
         <option value="$PROJECT_DIR$/static/dashboard/dist/monthsuccess.css" />
         <option value="$PROJECT_DIR$/static/dashboard/dist/daysuccess.css" />
-        <option value="$PROJECT_DIR$/templates/dashboard/product_statistics/main_product.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/product_statistics/sup_product.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/product_statistics/favorite_product.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/mailbox/inbox.html" />
@@ -204,10 +201,11 @@
         <option value="$PROJECT_DIR$/templates/dashboard/success_rate/day_success.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/success_rate/month_success.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/customer_contact/location_contact.html" />
-        <option value="$PROJECT_DIR$/app/dashboard/admin.py" />
-        <option value="$PROJECT_DIR$/app/dashboard/models.py" />
         <option value="$PROJECT_DIR$/templates/dashboard/customer_contact/day_contact.html" />
         <option value="$PROJECT_DIR$/app/dashboard/views.py" />
+        <option value="$PROJECT_DIR$/templates/dashboard/product_statistics/main_product.html" />
+        <option value="$PROJECT_DIR$/app/dashboard/models.py" />
+        <option value="$PROJECT_DIR$/app/dashboard/admin.py" />
       </list>
     </option>
   </component>
@@ -281,6 +279,13 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="dashboard" type="462c0819:PsiDirectoryNode" />
               <item name="customer_contact" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dash" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dash" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="product_statistics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dash" type="b2602c69:ProjectViewProjectNode" />
@@ -377,12 +382,12 @@
       <workItem from="1554171428278" duration="25488000" />
       <workItem from="1554256681680" duration="21827000" />
       <workItem from="1554342727965" duration="14675000" />
-      <workItem from="1554429721630" duration="13008000" />
+      <workItem from="1554429721630" duration="20772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309481000" />
+    <option name="totallyTimeSpent" value="317245000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,9 +400,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3305694" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3305694" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -411,7 +415,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32925585" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3058104" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3058104" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32925585" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -465,13 +469,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/mailbox/compose.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3150">
-          <caret line="210" selection-start-line="210" selection-end-line="210" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/dashboard/mailbox/read.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4140">
@@ -775,26 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/dashboard/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dashboard/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/location_contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
@@ -809,12 +786,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/product_statistics/main_product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="110" column="30" lean-forward="true" selection-start-line="110" selection-start-column="30" selection-end-line="110" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/dashboard/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dashboard/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="113" column="19" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dashboard/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>

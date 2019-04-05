@@ -98,3 +98,29 @@ class LocationContact(models.Model):
     location = models.ForeignKey(Province, on_delete=models.CASCADE)
     number_customer = models.IntegerField(default=0)
     created_time = models.DateTimeField(null=True)
+
+
+class MainBenefit(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name_benefit = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.name_benefit
+
+
+
+class MainProduct(models.Model):
+    id = models.IntegerField(primary_key=True)
+    number_customer = models.IntegerField(default=0)
+    name_product = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.name_product
+
+
+
+class Main_Product_Benefit(models.Model):
+    benefit = models.ForeignKey(MainBenefit, on_delete=models.CASCADE)
+    product = models.ForeignKey(MainProduct, on_delete=models.CASCADE)
+    created_time = models.DateTimeField(null=True)
+
