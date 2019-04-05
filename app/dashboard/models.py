@@ -70,9 +70,20 @@ class MonthSuccess(models.Model):
     number_policy = models.IntegerField(default=0)
     created_time = models.DateTimeField(null=True)
 
+
 class DayContact(models.Model):
     number_customer = models.IntegerField(default=0)
     created_time = models.DateTimeField(null=True)
+
+    @property
+    def get_dd_mm_yyyy(self):
+        str_date = '%s - %s - %s'%(self.created_time.day, self.created_time.month, self.created_time.year)
+        return str_date
+
+    @property
+    def get_hour_minute(self):
+        str_hour = '%sh - %sm '%(self.created_time.hour, self.created_time.minute)
+        return str_hour
 
 
 class Province(models.Model):

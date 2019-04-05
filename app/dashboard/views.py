@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.views import View
 from .models import MonthContact, ChannelSuccess, DaySuccess, MonthSuccess
 from .models import ChannelContact
-from .models import AgentTotal
+from .models import AgentTotal,DayContact
 from .models import Channel
 from .models import NewAgent, LocationContact
 import numpy as np
@@ -15,7 +15,28 @@ class DashboardView(View):
 
 class DaycontactView(View):
     def get(self, request):
-        return render(request, 'dashboard/customer_contact/day_contact.html')
+        list_contact = DayContact.objects.all()
+        count_list_contact = list_contact.count()
+        list_contact = list_contact[count_list_contact - 96:]
+        # lis1 = list_contact.values_list('number_customer', flat=True)
+        # a = np.array(lis1)
+        c=[]
+        b =0
+        for i in list_contact:
+            sub_item = {}
+            b = b + i.number_customer
+            sub_item['snbc'] = b
+            sub_item['nbc'] = i.number_customer
+            sub_item['day'] = i.get_dd_mm_yyyy
+            sub_item['hh'] = i.get_hour_minute
+            c.append(sub_item)
+        # list_data = zip(list_contact, a, c)
+        context = {
+            'list_data': c
+
+        }
+
+        return render(request, 'dashboard/customer_contact/day_contact.html', context)
 
 
 class MonthcontactView(View):
