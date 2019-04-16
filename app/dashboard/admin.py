@@ -48,10 +48,10 @@ class MainBenefitAdmin(admin.ModelAdmin):
     list_display = ('id', 'name_benefit')
 
 class MainProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name_product', 'number_customer')
+    list_display = ('id', 'name_product', 'number_customer', 'created_time')
 
 class Main_Product_BenefitAdmin(admin.ModelAdmin):
-    list_display = ('id', 'benefit', 'product', 'created_time')
+    list_display = ('id', 'benefit', 'product')
 
 
 # Register your models here.

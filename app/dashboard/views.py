@@ -4,7 +4,7 @@ from .models import MonthContact, ChannelSuccess, DaySuccess, MonthSuccess
 from .models import ChannelContact
 from .models import AgentTotal,DayContact
 from .models import Channel
-from .models import NewAgent, LocationContact
+from .models import NewAgent, LocationContact, MainBenefit, MainProduct, Main_Product_Benefit
 import numpy as np
 import json
 from .ultils import *
@@ -273,7 +273,29 @@ class AgentchannelView(View):
 
 class MainproductView(View):
     def get(self, request):
-        return render(request, 'dashboard/product_statistics/main_product.html')
+        list_sp = [
+
+        ]
+
+        products = MainProduct.objects.all()
+        sum_like = sum(products.values_list('number_customer', flat=True))
+        for item in products:
+            subitem = {}
+            subitem['name_product'] = item.name_product
+            subitem['like'] = item.number_customer
+            subitem['benefit'] = Main_Product_Benefit.objects.filter(
+                product_id=item.id).values_list('benefit__name_benefit', flat=True)
+            subitem['time'] = item.created_time
+            subitem['tytrong'] = np.round(item.number_customer/sum_like*100,2)
+
+            list_sp.append(subitem)
+
+
+        context = {
+            'list_sp': list_sp
+
+        }
+        return render(request, 'dashboard/product_statistics/main_product.html', context)
 
 
 class SupproductView(View):

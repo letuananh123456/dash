@@ -99,24 +99,44 @@
                   <th>STT</th>
                   <th>Thời gian</th>
                   <th>Tên sản phẩm chính</th>
-                  <th>Quyền lợi </th>
-                  <th>Số người thích</th>
-                  <th>Tỷ trọng</th>
+                  <th>Số người thích </th>
+                  <th>Tỷ trọng (%)</th>
+                  <th>Quyền lợi</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                  <th>1</th>
-                  <th></th>
-                  <th>Sản phẩm
-                      bảo hiểm A
-                  </th>
-                  <th>Quyền lợi 1</th>
-                  <th> 1,000,000</th>
-                  <th>10%</th>
-                </tr>
+               <tbody>
+{#                {% for item in list_data %}#}
+{#                <tr>#}
+{#                  <td>{{ forloop.counter }}</td>#}
+{#                  <td>Tháng 1#}
+{#                  </td>#}
+{#                    {% for it2 in item %}#}
+{##}
+{#                    <td>{{ it2 }}</td>#}
+{#                    {% endfor %}#}
+{#                </tr>#}
+{#                {% endfor %}#}
 
+                  {% for sp in list_sp %}
+                      <tr>
 
+                        <td rowspan="{{ sp.benefit |length}}"> {{ forloop.counter }} </td>
+                        <td rowspan="{{ sp.benefit |length}}"> {{ sp.time }} </td>
+                        <td rowspan="{{ sp.benefit |length}}"> {{ sp.name_product }} </td>
+                       <td rowspan="{{ sp.benefit |length}}"> {{ sp.like }} </td>
+                        <td rowspan="{{ sp.benefit |length}}"> {{ sp.tytrong }} </td>
+                        <td> {{ sp.benefit|first }}</td>
+                      </tr>
+                      {% for ben in  sp.benefit %}
+                          {% if forloop.first %}
+                              {% else %}
+                              <tr>
+                            <td>{{ ben }}</td>
+                      </tr>
+                          {% endif %}
+
+                     {% endfor %}
+                  {% endfor %}
                 </tfoot>
               </table>
             </div>
