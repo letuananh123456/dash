@@ -123,3 +123,24 @@ class Main_Product_Benefit(models.Model):
     product = models.ForeignKey(MainProduct, on_delete=models.CASCADE)
 
 
+class SupBenefit(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name_benefit = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.name_benefit
+
+
+class SupProduct(models.Model):
+    id = models.IntegerField(primary_key=True)
+    number_customer = models.IntegerField(default=0)
+    name_product = models.CharField(max_length=200)
+    created_time = models.DateTimeField(null=True)
+
+    def __str__(self):
+        return self.name_product
+
+
+class Sup_Product_Benefit(models.Model):
+    benefit = models.ForeignKey(SupBenefit, on_delete=models.CASCADE)
+    product = models.ForeignKey(SupProduct, on_delete=models.CASCADE)

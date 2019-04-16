@@ -5,7 +5,7 @@ from .models import ChannelContact
 from .models import AgentTotal
 from .models import NewAgent
 from .models import AgentChannel, Province, LocationContact, MainBenefit, MainProduct, Main_Product_Benefit
-from .models import ChannelSuccess, DaySuccess, MonthSuccess, DayContact
+from .models import ChannelSuccess, DaySuccess, MonthSuccess, DayContact, SupBenefit, SupProduct, Sup_Product_Benefit
 
 class ChannelContactAdmin(admin.ModelAdmin):
     list_display = ('id', 'distribution', 'number_customer', 'created_time')
@@ -53,6 +53,15 @@ class MainProductAdmin(admin.ModelAdmin):
 class Main_Product_BenefitAdmin(admin.ModelAdmin):
     list_display = ('id', 'benefit', 'product')
 
+class SupBenefitAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name_benefit')
+
+class SupProductAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name_product', 'number_customer', 'created_time')
+
+class Sup_Product_BenefitAdmin(admin.ModelAdmin):
+    list_display = ('id', 'benefit', 'product')
+
 
 # Register your models here.
 admin.site.register(MonthContact)
@@ -70,3 +79,6 @@ admin.site.register(LocationContact, LocationContactAdmin)
 admin.site.register(MainBenefit, MainBenefitAdmin)
 admin.site.register(MainProduct, MainProductAdmin)
 admin.site.register(Main_Product_Benefit, Main_Product_BenefitAdmin)
+admin.site.register(SupBenefit, SupBenefitAdmin)
+admin.site.register(SupProduct, SupProductAdmin)
+admin.site.register(Sup_Product_Benefit, Sup_Product_BenefitAdmin)
