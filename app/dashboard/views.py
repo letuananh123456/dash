@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views import View
 from .models import MonthContact, ChannelSuccess, DaySuccess, MonthSuccess
-from .models import ChannelContact
+from .models import ChannelContact, FavoriteBenefit, FavoriteProduct, Favorite_Product_Benefit
 from .models import AgentTotal,DayContact, SupBenefit, SupProduct, Sup_Product_Benefit
 from .models import Channel
 from .models import NewAgent, LocationContact, MainBenefit, MainProduct, Main_Product_Benefit
@@ -326,7 +326,28 @@ class SupproductView(View):
 
 class FavoriteproductView(View):
     def get(self, request):
-        return render(request, 'dashboard/product_statistics/favorite_product.html')
+        list_sp = [
+
+        ]
+
+        products = FavoriteProduct.objects.all()
+        for item in products:
+            subitem = {}
+            subitem['time'] = item.created_time
+            subitem['name_product'] = item.name_product
+            subitem['sa'] = item.sa
+            subitem['policy_term'] = item.policy_term
+            subitem['payment_term'] = item.payment_term
+            subitem['ways_to_get_benefit'] = item.ways_to_get_benefit
+            subitem['benefit'] = Favorite_Product_Benefit.objects.filter(
+                product_id=item.id).values_list('benefit__name_benefit', flat=True)
+            list_sp.append(subitem)
+
+        context = {
+            'list_sp': list_sp
+
+        }
+        return render(request, 'dashboard/product_statistics/favorite_product.html', context)
 
 
 class CalendarView(View):

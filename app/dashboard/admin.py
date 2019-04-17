@@ -3,7 +3,7 @@ from .models import MonthContact
 from .models import Channel
 from .models import ChannelContact
 from .models import AgentTotal
-from .models import NewAgent
+from .models import NewAgent, FavoriteBenefit, FavoriteProduct, Favorite_Product_Benefit
 from .models import AgentChannel, Province, LocationContact, MainBenefit, MainProduct, Main_Product_Benefit
 from .models import ChannelSuccess, DaySuccess, MonthSuccess, DayContact, SupBenefit, SupProduct, Sup_Product_Benefit
 
@@ -62,6 +62,21 @@ class SupProductAdmin(admin.ModelAdmin):
 class Sup_Product_BenefitAdmin(admin.ModelAdmin):
     list_display = ('id', 'benefit', 'product')
 
+class FavoriteBenefitAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name_benefit')
+
+class FavoriteProductAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name_product', 'sa', 'policy_term', 'payment_term', 'ways_to_get_benefit', 'created_time')
+
+class Favorite_Product_BenefitAdmin(admin.ModelAdmin):
+    list_display = ('id', 'benefit', 'product')
+
+
+
+
+
+
+
 
 # Register your models here.
 admin.site.register(MonthContact)
@@ -82,3 +97,6 @@ admin.site.register(Main_Product_Benefit, Main_Product_BenefitAdmin)
 admin.site.register(SupBenefit, SupBenefitAdmin)
 admin.site.register(SupProduct, SupProductAdmin)
 admin.site.register(Sup_Product_Benefit, Sup_Product_BenefitAdmin)
+admin.site.register(FavoriteBenefit, FavoriteBenefitAdmin)
+admin.site.register(FavoriteProduct, FavoriteProductAdmin)
+admin.site.register(Favorite_Product_Benefit, Favorite_Product_BenefitAdmin)

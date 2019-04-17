@@ -144,3 +144,29 @@ class SupProduct(models.Model):
 class Sup_Product_Benefit(models.Model):
     benefit = models.ForeignKey(SupBenefit, on_delete=models.CASCADE)
     product = models.ForeignKey(SupProduct, on_delete=models.CASCADE)
+
+
+class FavoriteBenefit(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name_benefit = models.CharField(max_length=200)
+
+
+    def __str__(self):
+        return self.name_benefit
+
+class FavoriteProduct(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name_product = models.CharField(max_length=200)
+    sa = models.IntegerField(default=0)
+    policy_term = models.IntegerField(default=0)
+    payment_term = models.IntegerField(default=0)
+    ways_to_get_benefit = models.CharField(max_length=200)
+    created_time = models.DateTimeField(null=True)
+
+    def __str__(self):
+        return self.name_product
+
+
+class Favorite_Product_Benefit(models.Model):
+    benefit = models.ForeignKey(FavoriteBenefit, on_delete=models.CASCADE)
+    product = models.ForeignKey(FavoriteProduct, on_delete=models.CASCADE)
