@@ -375,6 +375,6 @@ class UseragentView(View):
         return render(request, 'dashboard/user_agent/user.html')
 
 
-class  SearchagentView(View):
+class SearchagentView(View):
     def get(self, request):
         return render(request, 'dashboard/search_agent/search.html')

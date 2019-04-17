@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe98960c-8085-4c25-afce-bc80406ebfd8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/serianlizers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboard/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/celery-worker.log" beforeDir="false" afterPath="$PROJECT_DIR$/celery-worker.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/product_statistics/favorite_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/product_statistics/favorite_product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +25,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/dashboard/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="340" column="40" selection-start-line="340" selection-start-column="21" selection-end-line="340" selection-end-column="40" />
+            <state relative-caret-position="717">
+              <caret line="365" lean-forward="true" selection-start-line="365" selection-end-line="365" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/dashboard/api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/robot/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="123" column="6" selection-start-line="123" selection-start-column="6" selection-end-line="123" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/dashboard/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/dashboard/serianlizers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -44,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/dashboard/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="162" column="23" selection-start-line="162" selection-start-column="4" selection-end-line="162" selection-end-column="23" />
+            <state relative-caret-position="2370">
+              <caret line="158" selection-start-line="158" selection-end-line="158" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -54,18 +98,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dashboard/product_statistics/sup_product.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="107" selection-start-line="107" selection-end-line="107" />
-              <folding>
-                <element signature="e#59#79#0#DjangoTemplate" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/dashboard/product_statistics/favorite_product.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="477">
@@ -78,10 +110,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/day_contact.html">
+        <entry file="file://$PROJECT_DIR$/templates/dashboard/agent_statistics/agent_total.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1185">
-              <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+            <state relative-caret-position="652">
+              <caret line="73" column="14" selection-start-line="73" selection-start-column="14" selection-end-line="83" selection-end-column="28" />
+              <folding>
+                <element signature="n#block#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,33 +133,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/channel_contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="88" column="36" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dashboard/customer_contact/month_contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dashboard/success_rate/month_success.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -132,8 +140,8 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
-        <option value="Python Script" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -160,9 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/dashboard/myscript/monthsuccess.js" />
-        <option value="$PROJECT_DIR$/static/dashboard/myscript/tablesuccess.js" />
-        <option value="$PROJECT_DIR$/templates/dashboard/success_rate/table_success.html" />
         <option value="$PROJECT_DIR$/static/dashboard/myscript/barchar11.js" />
         <option value="$PROJECT_DIR$/templates/dashboard/agent_statistics/table_agent.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/mail/mail.html" />
@@ -181,7 +186,6 @@
         <option value="$PROJECT_DIR$/templates/dashboard/mailbox/read.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/user_agent/user.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/search_agent/search.html" />
-        <option value="$PROJECT_DIR$/app/dashboard/urls.py" />
         <option value="$PROJECT_DIR$/templates/dashboard/base.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/customer_contact/month_contact.html" />
         <option value="$PROJECT_DIR$/static/dashboard/myscript/agent_total.js" />
@@ -207,10 +211,14 @@
         <option value="$PROJECT_DIR$/templates/dashboard/customer_contact/day_contact.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/product_statistics/main_product.html" />
         <option value="$PROJECT_DIR$/templates/dashboard/product_statistics/sup_product.html" />
-        <option value="$PROJECT_DIR$/app/dashboard/models.py" />
         <option value="$PROJECT_DIR$/app/dashboard/admin.py" />
-        <option value="$PROJECT_DIR$/app/dashboard/views.py" />
         <option value="$PROJECT_DIR$/templates/dashboard/product_statistics/favorite_product.html" />
+        <option value="$PROJECT_DIR$/app/dashboard/models.py" />
+        <option value="$PROJECT_DIR$/app/dashboard/serianlizers.py" />
+        <option value="$PROJECT_DIR$/app/dashboard/views.py" />
+        <option value="$PROJECT_DIR$/app/dashboard/urls.py" />
+        <option value="$PROJECT_DIR$/robot/settings.py" />
+        <option value="$PROJECT_DIR$/app/dashboard/api.py" />
       </list>
     </option>
   </component>
@@ -248,56 +256,6 @@
               <item name="dash" type="b2602c69:ProjectViewProjectNode" />
               <item name="dash" type="462c0819:PsiDirectoryNode" />
               <item name="robot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dash" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dash" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dash" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dash" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dash" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dash" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dash" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dash" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dash" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dash" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="agent_statistics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dash" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dash" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="customer_contact" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dash" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dash" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="product_statistics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dash" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dash" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="success_rate" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -391,12 +349,12 @@
       <workItem from="1554687821429" duration="649000" />
       <workItem from="1555379858527" duration="20068000" />
       <workItem from="1555466568108" duration="16000" />
-      <workItem from="1555476011756" duration="4660000" />
+      <workItem from="1555476011756" duration="7117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344466000" />
+    <option name="totallyTimeSpent" value="346923000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -479,36 +437,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/mailbox/read.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4140">
-          <caret line="276" selection-start-line="276" selection-end-line="276" />
-          <folding>
-            <element signature="n#block#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/user_agent/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2910">
-          <caret line="194" selection-start-line="194" selection-end-line="194" />
-          <folding>
-            <element signature="n#block#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/search_agent/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2355">
-          <caret line="157" selection-start-line="157" selection-end-line="157" />
-          <folding>
-            <element signature="n#block#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/dashboard/calendar/calendar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1395">
@@ -684,16 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/dashboard/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/dashboard/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -710,16 +628,6 @@
           <caret line="193" column="1" selection-start-line="193" selection-start-column="1" selection-end-line="455" />
           <folding>
             <element signature="e#59#79#0#DjangoTemplate" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/agent_statistics/agent_total.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="73" column="14" selection-start-line="73" selection-start-column="14" selection-end-line="83" selection-end-column="28" />
-          <folding>
-            <element signature="n#block#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -796,26 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/dashboard/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="162" column="23" selection-start-line="162" selection-start-column="4" selection-end-line="162" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dashboard/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="340" column="40" selection-start-line="340" selection-start-column="21" selection-end-line="340" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/dashboard/product_statistics/main_product.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -829,6 +717,70 @@
           <caret line="88" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="n#block#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/agent_statistics/agent_total.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="73" column="14" selection-start-line="73" selection-start-column="14" selection-end-line="83" selection-end-column="28" />
+          <folding>
+            <element signature="n#block#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dashboard/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="365" lean-forward="true" selection-start-line="365" selection-end-line="365" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dashboard/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2370">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dashboard/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="123" column="6" selection-start-line="123" selection-start-column="6" selection-end-line="123" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dashboard/serianlizers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dashboard/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

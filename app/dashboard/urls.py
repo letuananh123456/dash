@@ -1,6 +1,6 @@
 from django.urls import path
 from app.dashboard import views as dash_view
-
+from . import  api as api_view
 app_name = 'dashboard'
 
 urlpatterns = [
@@ -24,6 +24,10 @@ urlpatterns = [
     path('read/', dash_view.ReadView.as_view(), name='read'),
     path('user-agent/', dash_view.UseragentView.as_view(), name='useragent'),
     path('search-agent/', dash_view.SearchagentView.as_view(), name='searchagent'),
+
+    #api url
+
+    path('api/update-agency/', api_view.UpdateNumberAgency.as_view()),
 
 
 
