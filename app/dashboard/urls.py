@@ -27,8 +27,9 @@ urlpatterns = [
 
     #api url
 
-    path('api/update-agency/', api_view.UpdateNumberAgency.as_view()),
-
+    path('api/update-agency-total/', api_view.UpdateNumberAgencyTotal.as_view()),
+    path('api/update-agency-new/', api_view.UpdateNumberNewAgency.as_view()),
+    path('api/update-agency-channel/', api_view.UpdateNumberAgencyChannel.as_view()),
 
 
 
