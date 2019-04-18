@@ -12,3 +12,21 @@ class UpdateAgencyChannelSerializer(serializers.Serializer):
     mm = serializers.IntegerField(required=True)
     yyyy = serializers.IntegerField(required=True)
     channel = serializers.IntegerField(required=True)
+
+
+class UpdateNumberCustomerSerializer(serializers.Serializer):
+    number_of_customer = serializers.IntegerField(required=True)
+    mm = serializers.IntegerField(required=True)
+    yyyy = serializers.IntegerField(required=True)
+
+class UpdateNumberCustomerLocationSerializer(serializers.Serializer):
+    number_of_customer = serializers.IntegerField(required=True)
+    mm = serializers.IntegerField(required=True)
+    yyyy = serializers.IntegerField(required=True)
+    location = serializers.IntegerField(required=True)
+
+class UpdateNumberCustomerChannelSerializer(serializers.Serializer):
+    number_of_customer = serializers.IntegerField(required=True)
+    mm = serializers.IntegerField(required=True)
+    yyyy = serializers.IntegerField(required=True)
+    channel = serializers.IntegerField(required=True)

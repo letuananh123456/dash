@@ -30,6 +30,11 @@ urlpatterns = [
     path('api/update-agency-total/', api_view.UpdateNumberAgencyTotal.as_view()),
     path('api/update-agency-new/', api_view.UpdateNumberNewAgency.as_view()),
     path('api/update-agency-channel/', api_view.UpdateNumberAgencyChannel.as_view()),
+    path('api/update-number-customer-day/', api_view.UpdateNumberCustomerDay.as_view()),
+    path('api/update-number-customer-month/', api_view.UpdateNumberCustomerMonth.as_view()),
+    path('api/update-number-customer-location/', api_view.UpdateNumberCustomerLocation.as_view()),
+    path('api/update-number-customer-channel/', api_view.UpdateNumberCustomerChannel.as_view()),
+
 
 
 

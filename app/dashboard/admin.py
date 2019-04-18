@@ -71,7 +71,8 @@ class FavoriteProductAdmin(admin.ModelAdmin):
 class Favorite_Product_BenefitAdmin(admin.ModelAdmin):
     list_display = ('id', 'benefit', 'product')
 
-
+class MonthContactAdmin(admin.ModelAdmin):
+    list_display = ('id', 'number_customer', 'created_time')
 
 
 
@@ -79,7 +80,7 @@ class Favorite_Product_BenefitAdmin(admin.ModelAdmin):
 
 
 # Register your models here.
-admin.site.register(MonthContact)
+admin.site.register(MonthContact,MonthContactAdmin)
 admin.site.register(Channel, ChannelAdmin)
 admin.site.register(ChannelContact, ChannelContactAdmin)
 admin.site.register(AgentTotal, AgentTotalAdmin)

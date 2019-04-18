@@ -7,7 +7,7 @@ class MonthContact(models.Model):
     created_time = models.DateTimeField(null=True)
 
     def __str__(self):
-        return 'Khách hàng tiếp cận %s '%self.created_time
+        return self.number_customer
 
     @property
     def get_year(self):
@@ -29,7 +29,7 @@ class ChannelContact(models.Model):
     created_time = models.DateTimeField(null=True)
 
     def __str__(self):
-        return 'Khách hàng tiếp cận %s '%self.created_time
+        return self.number_customer
 
 
 class AgentTotal(models.Model):
@@ -37,7 +37,7 @@ class AgentTotal(models.Model):
     created_time = models.DateTimeField(null=True)
 
     def __str__(self):
-        return 'Tổng số đại lý %s '%self.created_time
+        return self.number_agent
 
 
 class NewAgent(models.Model):
@@ -45,7 +45,7 @@ class NewAgent(models.Model):
     created_time = models.DateTimeField(null=True)
 
     def __str__(self):
-        return 'Tổng số đại lý mới %s ' % self.created_time
+        return self.number_agent
 
 
 class AgentChannel(models.Model):
