@@ -30,3 +30,17 @@ class UpdateNumberCustomerChannelSerializer(serializers.Serializer):
     mm = serializers.IntegerField(required=True)
     yyyy = serializers.IntegerField(required=True)
     channel = serializers.IntegerField(required=True)
+
+class UpdateSuccessRateSerializer(serializers.Serializer):
+    number_of_customer = serializers.IntegerField(required=True)
+    number_of_policy = serializers.IntegerField(required=True)
+    mm = serializers.IntegerField(required=True)
+    yyyy = serializers.IntegerField(required=True)
+
+
+class UpdateSuccessChannelSerializer(serializers.Serializer):
+    number_of_customer = serializers.IntegerField(required=True)
+    number_of_policy = serializers.IntegerField(required=True)
+    mm = serializers.IntegerField(required=True)
+    yyyy = serializers.IntegerField(required=True)
+    channel = serializers.IntegerField(required=True)

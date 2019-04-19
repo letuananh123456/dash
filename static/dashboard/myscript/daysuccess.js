@@ -3,7 +3,7 @@
   _bars.map(function(bar, index) {
     setTimeout(function() {
     	bar.style.width = bar.dataset.percent;
-    }, index * 1000);
+    }, index * 0);
 
   });
 })(document)

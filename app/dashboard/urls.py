@@ -34,9 +34,9 @@ urlpatterns = [
     path('api/update-number-customer-month/', api_view.UpdateNumberCustomerMonth.as_view()),
     path('api/update-number-customer-location/', api_view.UpdateNumberCustomerLocation.as_view()),
     path('api/update-number-customer-channel/', api_view.UpdateNumberCustomerChannel.as_view()),
-
-
-
+    path('api/update-day-success/', api_view.UpdateDaySuccess.as_view()),
+    path('api/update-month-success/', api_view.UpdateMonthSuccess.as_view()),
+    path('api/update-channel-success/', api_view.UpdateSuccessChannel.as_view()),
 
 
 
