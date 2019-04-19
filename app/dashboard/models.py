@@ -158,7 +158,7 @@ class FavoriteBenefit(models.Model):
 
 
 class FavoriteProduct(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     name_product = models.CharField(max_length=200)
     sa = models.IntegerField(default=0)
     policy_term = models.IntegerField(default=0)

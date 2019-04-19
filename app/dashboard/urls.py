@@ -37,6 +37,9 @@ urlpatterns = [
     path('api/update-day-success/', api_view.UpdateDaySuccess.as_view()),
     path('api/update-month-success/', api_view.UpdateMonthSuccess.as_view()),
     path('api/update-channel-success/', api_view.UpdateSuccessChannel.as_view()),
+    path('api/update-main-product/', api_view.UpdateMainProductStatisticSuccess.as_view()),
+    path('api/update-sup-product/', api_view.UpdateSupProductStatisticSuccess.as_view()),
+    path('api/update-favorite-product/', api_view.UpdateFavoriteProductSuccess.as_view()),
 
 
 

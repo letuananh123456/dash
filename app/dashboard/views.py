@@ -205,7 +205,7 @@ class AgenttotalView(View):
             li2 = [i for i in lis2]
             a = np.array(li1)
             b = np.array(li2)
-            ratio = a/b
+            ratio = np.round((a/b)*100,2)
             list_data = zip(lis1, lis2, ratio)
             diagram1 = json.dumps(li1)
             diagram2 = json.dumps(li2)
@@ -232,7 +232,7 @@ class NewagentView(View):
         li2 = [i for i in lis2]
         a = np.array(li1)
         b = np.array(li2)
-        ratio = a/b
+        ratio = np.round((a/b)*100,2)
         list_data = zip(lis1, lis2, ratio)
         diagram1 = json.dumps(li1)
         diagram2 = json.dumps(li2)
